@@ -1,0 +1,28 @@
+
+
+CREATE TABLE IF NOT EXISTS `aluno` (
+  `id` int(6) unsigned NOT NULL,
+  `nome` varchar(50)  NOT NULL,
+  `cpf` int(11) unsigned NOT NULL,
+  `nascimento` int(6) unsigned NOT NULL,
+  `curso` char(8) NOT NULL,
+  PRIMARY KEY (`id`)
+) DEFAULT CHARSET=utf8;
+
+INSERT INTO `aluno` (`id`, `nome`, `cpf`, `nascimento`, `curso` ) VALUES
+  ('1', 'Carlos', '00011122201', '012001', 'QA0123A'),
+  ('2', 'Maria', '00011122202', '012002', 'QA0123A'),
+  ('3', 'Ana', '00011122203', '012003', 'PD0123A'),
+  ('4', 'Caio', '00011122201', '012004', 'QA0123A'),
+  ('5', 'Julia', '00011122202', '012005', 'QA0123A'),
+  ('6', 'Amanda', '00011122203', '012006', 'QA0123A'),
+  ('7', 'João', '00011122201', '012007', 'QA0123A'),
+  ('8', 'José', '00011122202', '012008', 'QA0123A'),
+  ('9', 'Ingrid', '00011122203', '012009', 'PD0123A');
+  
+SELECT  nome, cpf, nascimento, curso
+FROM aluno
+WHERE curso 
+LIKE 'QA0123A' 
+AND nascimento = (SELECT MIN(nascimento) FROM aluno);
+
