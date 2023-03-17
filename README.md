@@ -14,3 +14,6 @@ Para criar a pagina, passos:
 E agora é só customizar.
 
 Link do Github.io desta página> https://carloseduardo1984.github.io/Meu_portfolio/
+
+
+![eu](https://user-images.githubusercontent.com/33332202/225769349-ccab2cf7-9982-476c-9a9e-0d410ba9b2d0.jpg)
