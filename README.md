@@ -1,6 +1,8 @@
 # modelo-de-portifolio
 Modelo de portifolio
 
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 Para criar a pagina, passos:
 
 1- Clicar em Settings
